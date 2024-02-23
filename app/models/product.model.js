@@ -5,7 +5,7 @@ const ProductSchema = mongoose.Schema({
         type: String, // type
         required: [true, "Product name is required!"], // [bool, comment]
     }, quantity: {
-        type: Number, required: true, //[true, "Quantity name is required!"],
+        type: Number, required: true,
         default: 0
     }, price: {
         type: Number, required: true, default: 0

@@ -21,7 +21,7 @@ app.use(jsonResponseMiddleware);
 app.use(routes);
 
 app.use((req, res) => {
-    res.status(404).customJson({message: 'Page Not Found'}, 404, 'NOT_FOUND');
+    res.customJson({message: 'Page Not Found'}, 404, 'NOT_FOUND');
 });
 
 mongoose.connect('mongodb://localhost:27017/products_db') // use your connection

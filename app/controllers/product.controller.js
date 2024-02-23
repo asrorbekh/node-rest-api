@@ -57,7 +57,9 @@ const updateProduct = async (req, res) => {
                 const image = await ProductImage.findById(imageId);
                 if (image) {
                     const imagePath = path.join(__dirname, '../uploads', image.filename);
-                    await fs.unlink(imagePath);
+                    if (imagePath){
+                        await fs.unlink(imagePath);
+                    }
                 }
             }
 

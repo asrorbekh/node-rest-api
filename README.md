@@ -46,8 +46,5 @@ List and describe the API endpoints available in your project.
 
 ## Contributing
 
-Explain how others can contribute to your project.
-
-## License
-
-Specify the license under which your project is distributed.
+As much as you can create pull request to this project
+## MIT License

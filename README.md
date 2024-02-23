@@ -1,6 +1,6 @@
 # Your Project Name
 
-Brief description of your project.
+Express App to practice
 
 ## Table of Contents
 
@@ -15,21 +15,15 @@ Brief description of your project.
 
 ## Introduction
 
-Provide a brief introduction to your project.
+Products app intro
 
 ## Getting Started
 
-### Prerequisites
+### Prerequisites to insall
 
-List any prerequisites or requirements that need to be installed before running your project.
-
-### Installation
-
-Provide step-by-step instructions on how to install and set up your project.
-
-## Usage
-
-Explain how to use your project or include any examples.
+```bash
+npm install
+```
 
 ## API Endpoints
 
@@ -46,5 +40,6 @@ List and describe the API endpoints available in your project.
 
 ## Contributing
 
-As much as you can create pull request to this project
+As much as you can create pull request to this project.
+
 ## MIT License

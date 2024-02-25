@@ -2,10 +2,12 @@ const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 const routes = require("./app/routes.js");
+const path = require("path");
 
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
-app.use('/uploads', express.static('uploads'));
+const assetsPath = path.join(__dirname, './public/uploads');
+app.use('/uploads', express.static(assetsPath));
 
 const jsonResponseMiddleware = (req, res, next) => {
     res.customJson = (data, status = 200, code = 'OK') => {
